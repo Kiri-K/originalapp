@@ -10,11 +10,13 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
    
-    
+    @IBOutlet var gazou :UIImageView!
   
+    @IBOutlet var namae: UILabel!
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
+        
     }
     override init(style: UITableViewCellStyle, reuseIdentifier: String!) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

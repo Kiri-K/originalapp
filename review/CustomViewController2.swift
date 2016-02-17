@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomViewController2: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class CustomViewController2: UIViewController, UICollectionViewDelegate {
     
 
     @IBOutlet weak var myCollectionView: UICollectionView!
@@ -17,7 +17,6 @@ class CustomViewController2: UIViewController, UICollectionViewDelegate, UIColle
         super.viewDidLoad()
         
         myCollectionView.delegate = self
-        myCollectionView.dataSource = self
         
         
         
@@ -33,10 +32,13 @@ class CustomViewController2: UIViewController, UICollectionViewDelegate, UIColle
     /*
     Cellの総数を返す
     */
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 80
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
     }
     
+    func collectionView(collectionView: UICollectionView,numberOfItemsInSection section: Int) ->Int{
+        return 3
+    }
     /*
     Cellに値を設定する
     */
@@ -46,7 +48,18 @@ class CustomViewController2: UIViewController, UICollectionViewDelegate, UIColle
         
         let  cell = myCollectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! CustomCollectionCell
         
-        
+        if indexPath.section == 0{
+            cell.bangou.text = "1"
+            cell.syasin.image = UIImage(named: "sukato.jpg")
+
+        }else if indexPath.section == 1{
+            cell.bangou.text = "2"
+            cell.syasin.image = UIImage(named: "sunika.jpg")
+            
+        }else if indexPath.section == 2{
+            cell.bangou.text = "3"
+            cell.syasin.image = UIImage(named: "piasu.jpg")
+        }
         
         return cell
     }

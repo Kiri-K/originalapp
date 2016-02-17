@@ -31,7 +31,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     
     func  numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 6;
+        return 5;
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -44,7 +44,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     }
     
     func  tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -52,8 +52,33 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         let cell:CustomTableViewCell = (tableView.dequeueReusableCellWithIdentifier("Cell") as? CustomTableViewCell
             )!
     
+        
+        if indexPath.section == 0{
+            cell.namae.text = "リュック"
+            cell.gazou.image = UIImage(named: "ryukku.jpg")
+            
+        }else if indexPath.section == 1{
+            cell.namae.text = "マフラー"
+            cell.gazou.image = UIImage(named: "mahura.jpg")
+            
+        }else if indexPath.section == 2{
+            cell.namae.text = "ニット"
+            cell.gazou.image = UIImage(named: "nitto.jpg")
+            
+        }else if indexPath.section == 3{
+            cell.namae.text = "バッグ"
+            cell.gazou.image = UIImage(named: "bag.jpg")
+            
+        }else if indexPath.section == 4{
+            cell.namae.text = "ネックレス"
+            cell.gazou.image = UIImage(named: "nekuresu.jpg")
+        }
+            
+        
+        
         return cell
     
+        
         
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

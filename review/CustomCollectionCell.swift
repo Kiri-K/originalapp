@@ -10,7 +10,9 @@ import UIKit
 
 class CustomCollectionCell: UICollectionViewCell {
     
+    @IBOutlet weak var syasin: UIImageView!
        
+    @IBOutlet weak var bangou: UILabel!
     required init(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)!
     }
