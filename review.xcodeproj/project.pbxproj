@@ -312,7 +312,11 @@
 				TargetAttributes = {
 					4BE956851BF86E1300EB7A63 = {
 						CreatedOnToolsVersion = 7.1.1;
+<<<<<<< HEAD
 						DevelopmentTeam = HJS9R4S8T6;
+=======
+						DevelopmentTeam = U54A27363Y;
+>>>>>>> origin/master
 					};
 					4BE956991BF86E1300EB7A63 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -544,7 +548,11 @@
 				INFOPLIST_FILE = review/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = com.litlitech.review;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.review;
+>>>>>>> origin/master
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -557,7 +565,11 @@
 				INFOPLIST_FILE = review/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+<<<<<<< HEAD
 				PRODUCT_BUNDLE_IDENTIFIER = com.litlitech.review;
+=======
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.review;
+>>>>>>> origin/master
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

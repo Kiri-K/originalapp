@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Cell" id="yF6-gD-8nz" customClass="CustomCollectionCell" customModule="review" customModuleProvider="target">
+<<<<<<< HEAD
             <rect key="frame" x="0.0" y="0.0" width="396" height="423"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -19,6 +20,19 @@
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBE-4x-I6u">
                         <rect key="frame" x="8" y="8" width="50" height="53"/>
+=======
+            <rect key="frame" x="0.0" y="0.0" width="549" height="562"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="549" height="562"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ix4-IN-3rS">
+                        <rect key="frame" x="0.0" y="0.0" width="549" height="562"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBE-4x-I6u">
+                        <rect key="frame" x="0.0" y="0.0" width="45" height="43"/>
+>>>>>>> origin/master
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -28,12 +42,20 @@
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+<<<<<<< HEAD
             <size key="customSize" width="396" height="423"/>
+=======
+            <size key="customSize" width="549" height="562"/>
+>>>>>>> origin/master
             <connections>
                 <outlet property="bangou" destination="QBE-4x-I6u" id="j21-8P-PLA"/>
                 <outlet property="syasin" destination="Ix4-IN-3rS" id="7k2-xH-hHS"/>
             </connections>
+<<<<<<< HEAD
             <point key="canvasLocation" x="350" y="359.5"/>
+=======
+            <point key="canvasLocation" x="426.5" y="290"/>
+>>>>>>> origin/master
         </collectionViewCell>
     </objects>
 </document>

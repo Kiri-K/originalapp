@@ -8,7 +8,11 @@
 
 import UIKit
 
+<<<<<<< HEAD
 class CustomViewController2: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+=======
+class CustomViewController2: UIViewController, UICollectionViewDelegate {
+>>>>>>> origin/master
     
 
     @IBOutlet weak var myCollectionView: UICollectionView!
@@ -16,6 +20,7 @@ class CustomViewController2: UIViewController, UICollectionViewDelegate, UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+<<<<<<< HEAD
         self.myCollectionView.delegate = self
         self.myCollectionView.dataSource = self
         
@@ -27,6 +32,18 @@ class CustomViewController2: UIViewController, UICollectionViewDelegate, UIColle
         myCollectionView.registerNib(nib, forCellWithReuseIdentifier: "Cell")
     
        
+=======
+        myCollectionView.delegate = self
+        
+        
+        
+        let nipName=UINib(nibName: "CustomCollectionCell", bundle:nil)
+        
+        myCollectionView.registerNib(nipName, forCellWithReuseIdentifier: "Cell")
+    
+       
+        
+>>>>>>> origin/master
     }
     
     
@@ -34,11 +51,19 @@ class CustomViewController2: UIViewController, UICollectionViewDelegate, UIColle
     Cellの総数を返す
     */
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+<<<<<<< HEAD
         return 3
     }
     
     func collectionView(collectionView: UICollectionView,numberOfItemsInSection section: Int) ->Int{
         return 1
+=======
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView,numberOfItemsInSection section: Int) ->Int{
+        return 3
+>>>>>>> origin/master
     }
     /*
     Cellに値を設定する
